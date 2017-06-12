@@ -90,6 +90,7 @@ for(var i =0;i<semesters.length;i++){
 			if(indexes.length == 1){ 
 				courseindex = indexes[0]
 			}else{
+				courseindex = -1;
 				for(var k = 0;k<indexes.length;k++){
 						if(semester == MELearnedCourse[indexes[k]].semester){
 							courseindex = indexes[k];
@@ -147,7 +148,7 @@ for(var index =0;index<MELearnedCourseStatus.length;index++){
 }
 
 
-
+console.log("------------------------------");
 console.log("必修課程狀況：");
 for(var i =0;i<MELearnedCourse.length;i++){
 	var status = MELearnedCourseStatus[i];
@@ -156,7 +157,7 @@ for(var i =0;i<MELearnedCourse.length;i++){
 		var code = MELearnedCourse[i].code;
 		var name = MELearnedCourse[i].name;
 		var grade = MELearnedCourse[i].grade;	
-		console.log(semester + " " + name + " (" + code + ") :" + grade);
+		console.log(name + " " + status);
 	}
 }
 
@@ -164,7 +165,7 @@ for(var i =0;i < MENoLearnedCourse.length;i++){
 	var name = MENoLearnedCourse[i];
 	console.log(name + " 必修未修");
 }
-
+console.log("------------------------------");
 console.log("選修課程狀況：");
 
 var practiceCourseCredit = 0;
@@ -185,14 +186,15 @@ for(var i =0;i<MELearnedCourse.length;i++){
 		var semester = MELearnedCourse[i].semester;
 		var code = MELearnedCourse[i].code;
 		var name = MELearnedCourse[i].name;
+		var credit = MELearnedCourse[i].credit;
 		var grade = MELearnedCourse[i].grade;	
-		console.log(semester + " " + name + " (" + code + ") :" + grade);
+		console.log(semester + " 學分:" + credit +" " + name + " (" + code + ") :" + grade);
 	}
 }
 
 var graduatePracticeCourseCredit = 2;
 var graduateOptionalCourseCredit = 22;
-
+console.log("------------------------------");
 console.log("選修學分完成率: " + optionalCourseCredit+"/" + graduateOptionalCourseCredit);
 console.log("必修實習學分完成率: " + practiceCourseCredit+"/" + graduatePracticeCourseCredit);
 
