@@ -2,12 +2,13 @@
 學期又到了選課時候了，校方系統在於觀看畢業學份部分相當不友善，一堆學生逐條的統計修過學分，還可能算錯而無法畢業，需要立馬下手hack看看
 ## 備註
 - 此工具目前僅適用於 台科大 機械系 系上選修課程
+- 此工具還在測試階段，如果學分較危險的同學請還是到註冊組做二次確認
 - 此工具不會存取同學的任何資料>w<
 
 ## 使用方法
 - 登入校方學生系統後點選 成績查詢
 
-<img src="https://github.com/Nick0603/calcGraduationCredit/blob/master/images/console.PNG?raw=true" alt="成績查詢">
+<img src="https://github.com/Nick0603/calcGraduationCredit/blob/master/images/searchGrade.PNG?raw=true" alt="成績查詢">
 
 - 進入成績查詢的畫面
 
