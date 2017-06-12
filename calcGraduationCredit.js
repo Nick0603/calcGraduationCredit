@@ -16,6 +16,8 @@ MEObligatoryCourse[semesters[3]]=["材料力學", "工程數學(二)", "應用�
 MEObligatoryCourse[semesters[4]]=["機械設計", "製造學", "機械實習(二)-電子與自控領域", "自動控制(一)", "流體力學"];
 MEObligatoryCourse[semesters[5]]=["機械系統設計與實務","熱傳學","機械實習(三)-熱流領域"];
 
+var sameCourseName = ["物理","物理實習"];
+
 var MELearnedCourse = [];
 var MENoLearnedCourse = [];
 
@@ -86,17 +88,19 @@ for(var i =0;i<semesters.length;i++){
 				}
 			}
 		}else{
-			var indexes = getAllIndexes(MELearnedCourseNames, courseName);
-			if(indexes.length == 1){ 
-				courseindex = indexes[0]
-			}else{
+			//例外事件  物理上下學期兩門名稱相同
+			if(sameCourseName.indexOf(courseName) != -1){
+				var indexes = getAllIndexes(MELearnedCourseNames, courseName);
 				courseindex = -1;
 				for(var k = 0;k<indexes.length;k++){
+						//課程代碼同的例外事件
 						if(semester == MELearnedCourse[indexes[k]].semester){
 							courseindex = indexes[k];
 							break;
 						}
 				}
+			}else{
+				courseindex = MELearnedCourseNames.indexOf(courseName);
 			}
 		}
 		
