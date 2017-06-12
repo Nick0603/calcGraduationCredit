@@ -94,7 +94,7 @@ for(var i =0;i<semesters.length;i++){
 				courseindex = -1;
 				for(var k = 0;k<indexes.length;k++){
 						//課程代碼同的例外事件
-						if(semester == MELearnedCourse[indexes[k]].semester){
+						if(semester%10 == MELearnedCourse[indexes[k]].semester%10){
 							courseindex = indexes[k];
 							break;
 						}
