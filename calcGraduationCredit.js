@@ -85,6 +85,8 @@ for(var i =0;i<semesters.length;i++){
 				var learnedCourseName = MELearnedCourseNames[k];
 				if(learnedCourseName.includes(courseName)){
 					courseindex = k;
+					// 第一個收尋到的為最晚修習的
+					break;
 				}
 			}
 		}else{
@@ -94,6 +96,7 @@ for(var i =0;i<semesters.length;i++){
 				courseindex = -1;
 				for(var k = 0;k<indexes.length;k++){
 						//課程代碼同的例外事件
+						//需選擇最後修習的那次課程
 						if(semester%10 == MELearnedCourse[indexes[k]].semester%10){
 							courseindex = indexes[k];
 							break;
