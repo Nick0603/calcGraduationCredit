@@ -18,7 +18,7 @@
 
 <img src="https://github.com/Nick0603/calcGraduationCredit/blob/master/images/console.PNG?raw=true" alt="主控台畫面">
 
-- 複製 calcGraduationCredit.js 的程式碼並貼上
+- 複製 calcGraduationCredit.js 的程式碼並貼上，按下Enter執行
    - [程式碼網址](https://github.com/Nick0603/calcGraduationCredit/blob/master/calcGraduationCredit.js)
 
 <img src="https://github.com/Nick0603/calcGraduationCredit/blob/master/images/pasteCode.PNG?raw=true" alt="貼上程式碼">
