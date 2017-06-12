@@ -1,4 +1,4 @@
-var yourSemester = 1031;
+var yourSemester = praseInt(prompt("你的入學年(學號前三個數字，不包含英文)") + '1');
 semesters = [];
 for(var i=0;i<8;i++){
 	semesters.push(yourSemester);
