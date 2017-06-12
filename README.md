@@ -7,24 +7,24 @@
 ## 使用方法
 - 登入校方學生系統後點選 成績查詢
 
-![成績查詢](./images/成績查詢.png)
+![成績查詢](/images/成績查詢.png)
 
 - 進入成績查詢的畫面
 
-![成績查詢畫面](./images/成績查詢畫面.png)
+![成績查詢畫面](/images/成績查詢畫面.png)
 
 - 開啟開發者工具
   -可以點擊 F12 在選取主控台(console)
 
-![主控台畫面](./images/主控台畫面.png)
+![主控台畫面](/images/主控台畫面.png)
 
 - 複製 calcGraduationCredit.js 的程式碼並貼上
 
    - [程式碼網址](https://github.com/Nick0603/calcGraduationCredit/blob/master/calcGraduationCredit.js)
 
-![貼上程式碼](./images/貼上程式碼.png)
+![貼上程式碼](/images/貼上程式碼.png)
 
 - 查看結果，如有任何錯誤歡迎回報
     - [ 我的FB ](https://www.facebook.com/profile.php?id=100008999889644)
 
-![結果](./images/結果.png)
+![結果](/images/結果.png)
