@@ -166,7 +166,7 @@ for(var i =0;i < MENoLearnedCourse.length;i++){
 	console.log(name + " 必修未修");
 }
 console.log("------------------------------");
-console.log("選修課程狀況：");
+console.log("選修與實習課程狀況：");
 
 var practiceCourseCredit = 0;
 var optionalCourseCredit = 0;
